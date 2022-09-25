@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Vegan Style Personal Use;
+    src: url(VeganStylePersonalUse-5Y58.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap');
+body {
+   margin: 0;
+   padding: 0;
+}
+
+#home {
+    font-family: Vegan Style Personal Use;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(images/Wallpapercake3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 34.375rem;
+    position: relative;
+    top: -22px;
+    transition: 2s;
+} 
+
+#home:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+.topnav {
+    animation: slide-down 2s;
+    padding-top: 15px;
+}
+
+.nav-list {
+    animation: slide-down 2s;
+    list-style-type: none;
+    display: inline;
+} 
+
+.nav-list a {
+    color: #e8cadc;
+    text-decoration: none;
+    padding: 18px;
+    font-size: 20px;
+} 
+.active {
+   -webkit-text-stroke: 1px white;
+   text-shadow: 0px 2px 4px #e8cadc;
+}
+.header-wrapper {
+    position: relative;
+   margin-right: 2%;
+    bottom: 170px;
+    height: 34.375rem;
+    text-align: center; 
+}
+
+.name-wrapper1 {
+    position: relative;
+    height: 15.625rem;
+    top: 100px;
+    overflow-y: hidden;
+}
+.name-wrapper2 {
+    position: relative;
+    height: 15.625rem;
+    top: 50px;
+    overflow-y: hidden;
+}
+
+#bakery-name1 {
+    animation: slide-up 2s;
+    color: white;  
+    -webkit-text-stroke: 1px white;
+	text-shadow: 0px 2px 4px #e8cadc;
+    font-size: 6.25rem;
+}
+#bakery-name2 {
+    color: #150001;
+    -webkit-text-stroke: 1px #150001;
+	text-shadow: 0px 2px 4px white;
+    font-size: 6.875rem;
+    margin-top: 0;
+    animation: slide-down 2s;
+}
+
+.menu-button {
+    font-size: 1.875rem;
+    text-align: center;
+    animation: slide-up 2s;
+    position: relative;
+    bottom: 170px;
+    overflow: hidden;
+}
+
+button {
+    background-color: #3f0207;
+    color: white;
+    font-family: Vegan Style Personal Use;
+    border: none;
+    width: 300px;
+    font-size: 1.25rem;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #e8cadc;
+    transition: 1.2s;
+}
+
+button:hover {
+    box-shadow:  0px 0px 2px rgb(36, 34, 34);
+    cursor: pointer;
+    background-color: #e8cadc;
+    color: #441c24;
+    -webkit-text-stroke: 1px #150001;
+	text-shadow: 0px 2px 4px white;
+    outline: 1px solid #441c24;
+}
+
+
+@keyframes slide-up{
+    from{
+        transform: translateY(300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes slide-down{
+    from{
+        transform: translateY(-400px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
